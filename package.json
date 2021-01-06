@@ -1,0 +1,33 @@
+{
+  "name": "vivliostyle-theme-dnd-5e-phb",
+  "description": "D&D 5e PHB theme for Vivliostyle",
+  "version": "0.1.0",
+  "author": "oldgeese <hiro.onoda@gmail.com>",
+  "scripts": {
+    "dev": "vivliostyle-theme-scripts preview theme.css",
+    "validate": "vivliostyle-theme-scripts validate"
+  },
+  "devDependencies": {
+    "vivliostyle-theme-scripts": "^0.2.0"
+  },
+  "files": [
+    "*.css",
+    "*.css.map",
+    "scss",
+    "example"
+  ],
+  "keywords": [
+    "vivliostyle",
+    "vivliostyle-theme"
+  ],
+  "license": "MIT",
+  "vivliostyle": {
+    "theme": {
+      "name": "Vivliostyle Theme Dnd5e Phb",
+      "author": "oldgeese <hiro.onoda@gmail.com>",
+      "style": "./theme.css",
+      "category": "journal",
+      "topics": []
+    }
+  }
+}
