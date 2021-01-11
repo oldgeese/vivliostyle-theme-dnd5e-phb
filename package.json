@@ -29,11 +29,21 @@
   "license": "MIT",
   "vivliostyle": {
     "theme": {
-      "name": "Vivliostyle Theme Dnd5e Phb",
+      "name": "Vivliostyle Theme Dnd5e PHB",
       "author": "oldgeese <hiro.onoda@gmail.com>",
       "style": "./theme.css",
-      "category": "journal",
-      "topics": []
+      "main": "./theme.css",
+      "category": "misc",
+      "keywords": ["vivliostyle-theme"],
+      "topics": [
+        "trpg",
+        "game",
+        "phb",
+        "d&d",
+        "dnd",
+        "d&d5e",
+        "dnd5e"
+      ]
     }
   },
   "dependencies": {}
