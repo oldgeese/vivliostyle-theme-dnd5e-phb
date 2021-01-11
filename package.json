@@ -4,11 +4,20 @@
   "version": "0.1.0",
   "author": "oldgeese <hiro.onoda@gmail.com>",
   "scripts": {
-    "dev": "vivliostyle-theme-scripts preview theme.css",
-    "validate": "vivliostyle-theme-scripts validate"
+    "dev": "vivliostyle-theme-scripts preview theme.css --layout example/sample.md",
+    "validate": "vivliostyle-theme-scripts validate",
+    "phb": "node scripts/phb.js"
   },
   "devDependencies": {
-    "vivliostyle-theme-scripts": "^0.2.0"
+    "@types/less": "^3.0.2",
+    "autoprefixer": "^10.2.1",
+    "cssnano": "^4.1.10",
+    "less": "^4.0.0",
+    "postcss": "^8.2.4",
+    "postcss-assets": "^5.0.0",
+    "postcss-discard-unused": "^4.0.1",
+    "postcss-url": "^10.1.1",
+    "vivliostyle-theme-scripts": "^0.3.1"
   },
   "files": [
     "*.css",
@@ -29,5 +38,6 @@
       "category": "journal",
       "topics": []
     }
-  }
+  },
+  "dependencies": {}
 }
