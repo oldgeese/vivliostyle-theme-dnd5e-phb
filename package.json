@@ -27,6 +27,9 @@
     "vivliostyle-theme"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/oldgeese/vivliostyle-theme-dnd5e-phb",
+  "repository": "github:oldgeese/vivliostyle-theme-dnd5e-phb",
+  "bugs": "https://github.com/oldgeese/vivliostyle-theme-dnd5e-phb/issues",
   "vivliostyle": {
     "theme": {
       "name": "Vivliostyle Theme Dnd5e PHB",
