@@ -27,20 +27,32 @@ module.exports = {
 ## Dev
 Edit `phbStyle/*`, then run `npm phb` or `yarn phb`.
 
-Run `vivliostyle-theme-scripts preview` to preview your `theme.css`.
-
+### Preview
 ```bash
-vivliostyle-theme-scripts preview theme.css
+npm preview
+```
+or
+```bash
+yarn preview
 ```
 
 You can specify layout file with `--layout` flag:
 
 ```bash
-vivliostyle-theme-scripts preview theme.css --layout example/default.md
+npm preview --layout example/default.md
 ```
-
-Run `vivliostyle-theme-scripts validate` before publishing your package.
-
+or
 ```bash
-vivliostyle-theme-scripts validate
+yarn preview --layout example/default.md
 ```
+
+### Validate
+Validate before publishing your package.
+```bash
+npm validate
+```
+or
+```bash
+yarn validate
+```
+
