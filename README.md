@@ -24,15 +24,20 @@ module.exports = {
 };
 ```
 
+## Sample Image
+![Sample Image](example/sample.png)
+
+## Full sample document
+
+see `example/sample.md`
+
 ## Dev
 Edit `phbStyle/*`, then run `npm phb` or `yarn phb`.
 
 ### Preview
 ```bash
 npm preview
-```
-or
-```bash
+# or
 yarn preview
 ```
 
@@ -40,9 +45,7 @@ You can specify layout file with `--layout` flag:
 
 ```bash
 npm preview --layout example/default.md
-```
-or
-```bash
+# or
 yarn preview --layout example/default.md
 ```
 
@@ -50,9 +53,7 @@ yarn preview --layout example/default.md
 Validate before publishing your package.
 ```bash
 npm validate
-```
-or
-```bash
+# or
 yarn validate
 ```
 
