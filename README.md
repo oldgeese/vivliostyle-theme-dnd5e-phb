@@ -25,6 +25,7 @@ module.exports = {
 ```
 
 ## Dev
+Edit `phbStyle/*`, then run `npm phb` or `yarn phb`.
 
 Run `vivliostyle-theme-scripts preview` to preview your `theme.css`.
 
