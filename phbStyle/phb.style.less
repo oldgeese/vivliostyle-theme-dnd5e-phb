@@ -1,6 +1,5 @@
 @import (less) './phbStyle/reset.less';
 @import (less) './phbStyle/phb.assets.less';
-// @import (less) './phbStyle/phb.depricated.less';
 @import (css, inline) './phbStyle/phb.fonts.css';
 //Colors
 @background            : #EEE5CE;
@@ -68,427 +67,421 @@ html {
 }
 
 .useSansSerif(){
-	font-family : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-	em{
-		font-family : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-		font-style  : italic;
-	}
-	strong{
-		font-family    : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-		font-weight    : 800;
-		letter-spacing : -0.02em;
-	}
+  font-family : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  em{
+    font-family : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-style  : italic;
+  }
+  strong{
+    font-family    : ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight    : 800;
+    letter-spacing : -0.02em;
+  }
 }
-.useColumns(@multiplier : 1){
-	column-count         : 2;
-	column-fill          : auto;
-	column-gap           : 1cm;
-	column-width         : 8cm * @multiplier;
-	-webkit-column-count : 2;
-	-moz-column-count    : 2;
-	-webkit-column-width : 8cm * @multiplier;
-	-moz-column-width    : 8cm * @multiplier;
-	-webkit-column-gap   : 1cm;
-	-moz-column-gap      : 1cm;
+.useColumns(){
+  column-count         : 2;
+  -webkit-column-count : 2;
+  -moz-column-count    : 2;
+  column-fill          : auto;
+  column-gap           : 1cm;
+  -webkit-column-gap   : 1cm;
+  -moz-column-gap      : 1cm;
 }
 body{
-	.useColumns();
-	z-index           : 15;
-	box-sizing        : border-box;
-	overflow          : hidden;
-	font-family       : BookSanity, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-	font-size         : 0.317cm;
-	text-rendering    : optimizeLegibility;
-	page-break-before : always;
-	page-break-after  : always;
-	//*****************************
-	// *            BASE
-	// *****************************/
-	p{
-		padding-bottom : 0.8em;
-		line-height    : 1.3em;
-		&+p{
-			margin-top : -0.8em;
-		}
-	}
-	ul{
-		margin-bottom       : 0.8em;
-		padding-left        : 1.4em;
-		line-height         : 1.3em;
-		list-style-position : outside;
-		list-style-type     : disc;
-	}
-	ol{
-		margin-bottom       : 0.8em;
-		padding-left        : 1.4em;
-		line-height         : 1.3em;
-		list-style-position : outside;
-		list-style-type     : decimal;
-	}
-	//Indents after p or lists
-	p+p, ul+p, ol+p{
-		text-indent : 1em;
-	}
-	img{
-		z-index : -1;
-	}
-	strong{
-		font-weight    : bold;
-		letter-spacing : 0.03em;
-	}
-	em{
-		font-style : italic;
-	}
-	sup{
-		vertical-align : super;
-		font-size      : smaller;
-		line-height    : 0;
-	}
-	sub{
-		vertical-align : sub;
-		font-size      : smaller;
-		line-height    : 0;
-	}
-	//*****************************
-	// *           HEADERS
-	// *****************************/
-	h1,h2,h3,h4{
-		margin-top    : 0.2em;
-		margin-bottom : 0.2em;
-		font-family   : MrJeeves, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-		font-weight   : 800;
+  .useColumns();
+  z-index           : 15;
+  box-sizing        : border-box;
+  overflow          : visible;
+  font-family       : BookSanity, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size         : 0.317cm;
+  text-rendering    : optimizeLegibility;
+  page-break-before : always;
+  page-break-after  : always;
+  //*****************************
+  // *            BASE
+  // *****************************/
+  p{
+    padding-bottom : 0.8em;
+    line-height    : 1.3em;
+    &+p{
+      margin-top : -0.8em;
+    }
+  }
+  ul{
+    margin-bottom       : 0.8em;
+    padding-left        : 1.4em;
+    line-height         : 1.3em;
+    list-style-position : outside;
+    list-style-type     : disc;
+  }
+  ol{
+    margin-bottom       : 0.8em;
+    padding-left        : 1.4em;
+    line-height         : 1.3em;
+    list-style-position : outside;
+    list-style-type     : decimal;
+  }
+  //Indents after p or lists
+  p+p, ul+p, ol+p{
+    text-indent : 1em;
+  }
+  img{
+    z-index : -1;
+  }
+  strong{
+    font-weight    : bold;
+    letter-spacing : 0.03em;
+  }
+  em{
+    font-style : italic;
+  }
+  sup{
+    vertical-align : super;
+    font-size      : smaller;
+    line-height    : 0;
+  }
+  sub{
+    vertical-align : sub;
+    font-size      : smaller;
+    line-height    : 0;
+  }
+  //*****************************
+  // *           HEADERS
+  // *****************************/
+  h1,h2,h3,h4{
+    margin-top    : 0.2em;
+    margin-bottom : 0.2em;
+    font-family   : MrJeeves, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight   : 800;
     font-variant: small-caps;
-		color         : @headerText;
-	}
+    color         : @headerText;
+  }
   h1, h2, h3, h4, h5, h6 {
     break-inside: avoid;
     break-after: avoid;
     page-break-inside: avoid;
     page-break-after: avoid;
   }
-	h1{
-    float: top;
-    float-reference: page;
-		column-span         : all;
-		font-size           : 0.987cm;
-		-webkit-column-span : all;
-		-moz-column-span    : all;
+  h1{
+    column-span         : all;
+    font-size           : 0.987cm;
+    -webkit-column-span : all;
+    -moz-column-span    : all;
     page-break-before: always;
-		&+p::first-letter{
-			float       : left;
-			font-family : Solberry, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
-			font-size   : 10em;
-			color       : #222;
-			line-height : 0.8em;
-		}
-	}
-	h2{
-		font-size : 0.705cm;
-	}
-	h3{
-		font-size     : 0.529cm;
-		border-bottom : 2px solid @headerUnderline;
-	}
-	h4{
-		margin-bottom : 0.00em;
-		font-size     : 0.458cm;
-	}
-	h5{
-		margin-bottom : 0.2em;
+    &+p::first-letter{
+      float       : left;
+      font-family : Solberry, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+      font-size   : 10em;
+      color       : #222;
+      line-height : 0.8em;
+    }
+  }
+  h2{
+    font-size : 0.705cm;
+  }
+  h3{
+    font-size     : 0.529cm;
+    border-bottom : 2px solid @headerUnderline;
+  }
+  h4{
+    margin-bottom : 0.00em;
+    font-size     : 0.458cm;
+  }
+  h5{
+    margin-bottom : 0.2em;
     font-family: ScalySansSmallCaps, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-		font-size     : 0.423cm;
-		font-weight   : 900;
-	}
-	//*****************************
-	// *          TABLE
-	// *****************************/
-	table{
-		.useSansSerif();
-		width         : 100%;
-		margin-bottom : 1em;
-		font-size     : 10pt;
-		thead{
-			display: table-row-group;
-			font-weight : 800;
-			th{
-				vertical-align : bottom;
-				padding-bottom : 0.3em;
-				padding-right  : 0.1em;
-				padding-left   : 0.1em;
-			}
-		}
-		tbody{
-			tr{
-				td{
-					padding : 0.3em 0.1em;
-				}
-				&:nth-child(odd){
-					background-color : @noteGreen;
-				}
-			}
-		}
-	}
-	//*****************************
-	// *            NOTE
-	// *****************************/
-	blockquote{
-		.useSansSerif();
-		box-sizing          : border-box;
-		margin-bottom       : 1em;
-		padding             : 5px 10px;
-		background-color    : @noteGreen;
-		border-style        : solid;
-		border-width        : 11px;
-		border-image        : @noteBorderImage 11;
-		border-image-outset : 9px 0px;
-		box-shadow          : 1px 4px 14px #888;
-		p, ul{
-			font-size   : 0.352cm;
-			line-height : 1.1em;
-		}
-	}
-	//If a note starts a column, give it space at the top to render border
-	pre+blockquote, h2+blockquote, h3+blockquote, h4+blockquote, h5+blockquote {
-		margin-top : 13px;
-	}
-	//*****************************
-	// *    MONSTER STAT BLOCK
-	// *****************************/
-	hr+blockquote{
-		position         : relative;
-		padding-top      : 15px;
-		background-color : @monsterStatBackground;
-		border-style     : solid;
-		border-width     : 10px;
-		border-image     : @monsterBorderImage 10;
-		h2{
-			margin-top    : -8px;
-			margin-bottom : 0px;
-			&+p{
-				padding-bottom : 0px;
-			}
-		}
-		h3{
+    font-size     : 0.423cm;
+    font-weight   : 900;
+  }
+  //*****************************
+  // *          TABLE
+  // *****************************/
+  table{
+    .useSansSerif();
+    width         : 100%;
+    margin-bottom : 1em;
+    font-size     : 10pt;
+    thead{
+      display: table-row-group;
+      font-weight : 800;
+      th{
+        vertical-align : bottom;
+        padding-bottom : 0.3em;
+        padding-right  : 0.1em;
+        padding-left   : 0.1em;
+      }
+    }
+    tbody{
+      tr{
+        td{
+          padding : 0.3em 0.1em;
+        }
+        &:nth-child(odd){
+          background-color : @noteGreen;
+        }
+      }
+    }
+  }
+  //*****************************
+  // *            NOTE
+  // *****************************/
+  blockquote{
+    .useSansSerif();
+    box-sizing          : border-box;
+    margin-bottom       : 1em;
+    padding             : 5px 10px;
+    background-color    : @noteGreen;
+    border-style        : solid;
+    border-width        : 11px;
+    border-image        : @noteBorderImage 11;
+    border-image-outset : 9px 0px;
+    box-shadow          : 1px 4px 14px #888;
+    p, ul{
+      font-size   : 0.352cm;
+      line-height : 1.1em;
+    }
+  }
+  //If a note starts a column, give it space at the top to render border
+  pre+blockquote, h2+blockquote, h3+blockquote, h4+blockquote, h5+blockquote {
+    margin-top : 13px;
+  }
+  .monster{
+    padding-top      : 15px;
+    // background-color : @monsterStatBackground;
+    background-color : transparent;
+    // border-style     : solid;
+    // border-width     : 10px;
+    // border-image     : @monsterBorderImage 10;
+    border:0;
+    box-shadow          : 0;
+    h2{
+      margin-top    : -8px;
+      margin-bottom : 0px;
+      &+p{
+        padding-bottom : 0px;
+      }
+    }
+    h3{
       font-family: ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-			font-weight   : 400;
-			border-bottom : 1px solid @headerText;
-		}
-		hr+ul{
-			color : @headerText;
-		}
-		ul{
-			.useSansSerif();
-			padding-left : 1em;
-			font-size    : 0.352cm;
-		}
-		// Monster Ability table
-		hr+table{
-			margin              : 0;
-			column-span         : 1;
-			background-color    : transparent;
-			border-style        : none;
-			border-image        : none;
-			-webkit-column-span : 1;
-			tbody{
-				tr:nth-child(odd), tr:nth-child(even){
-					background-color : transparent;
-				}
-			}
-		}
-		table{
-			color : @headerText;
-		}
-		p+p{
-			margin-top     : 0em;
-			padding-bottom : 0.5em;
-			text-indent    : 0em;
-		}
-		//Triangle dividers
-		hr{
-			visibility       : visible;
-			height           : 6px;
-			margin           : 4px 0px;
-			background-image : @redTriangleImage;
-			background-size  : 100% 100%;
-			border           : none;
-		}
-	}
-	//Full Width
-	hr+hr+blockquote{
-		.useColumns(0.96);
-	}
-	//*****************************
-	// *           FOOTER
-	// *****************************/
-	&:nth-child(even){
-		.footnote{
-			left       : 80px;
-			text-align : left;
-		}
-	}
-	.footnote{
-		position   : absolute;
-		right      : 80px;
-		bottom     : 32px;
-		z-index    : 150;
-		width      : 200px;
-		font-size  : 0.8em;
-		color      : #c9ad6a;
-		text-align : right;
-	}
-	//*****************************
-	// *          EXTRAS
-	// *****************************/
-	hr{
-		visibility : hidden;
-		margin     : 0px;
-	}
-	//Modified unorder list, used in spells
-	hr+ul{
-		margin-bottom   : 0.5em;
-		padding-left    : 1em;
-		text-indent     : -1em;
-		list-style-type : none;
-	}
-	//Column Break
-	pre, code{
-		visibility                 : hidden;
-		-webkit-column-break-after : always;
-		break-after                : always;
-		-moz-column-break-after    : always;
-	}
-	//Avoid breaking up
-	p,blockquote,table{
-		z-index                     : 15;
-		-webkit-column-break-inside : avoid;
-		page-break-inside           : avoid;
-		break-inside                : avoid;
-	}
-	//Better spacing for spell blocks
-	h4+p+hr+ul{
-		margin-top : -0.5em
-	}
-	//Text indent right after table
-	table+p{
-		text-indent : 1em;
-	}
-	// Nested lists
-	ul ul,ol ol,ul ol,ol ul{
-		margin-bottom : 0px;
-		margin-left   : 1.5em;
-	}
-	li{
-		-webkit-column-break-inside : avoid;
-		page-break-inside           : avoid;
-		break-inside                : avoid;
-	}
+      font-weight   : 400;
+      border-bottom : 1px solid @headerText;
+    }
+    hr+ul{
+      color : @headerText;
+    }
+    ul{
+      .useSansSerif();
+      padding-left : 1em;
+      font-size    : 0.352cm;
+    }
+    // Monster Ability table
+    hr+table{
+      margin              : 0;
+      column-span         : 1;
+      background-color    : transparent;
+      border-style        : none;
+      border-image        : none;
+      -webkit-column-span : 1;
+      tbody{
+        tr:nth-child(odd), tr:nth-child(even){
+          background-color : transparent;
+        }
+      }
+    }
+    table{
+      color : @headerText;
+    }
+    p+p{
+      margin-top     : 0em;
+      padding-bottom : 0.5em;
+      text-indent    : 0em;
+    }
+    //Triangle dividers
+    hr{
+      visibility       : visible;
+      height           : 6px;
+      margin           : 4px 0px;
+      background-image : @redTriangleImage;
+      background-size  : 100% 100%;
+      border           : none;
+    }
+  }
+
+  //*****************************
+  // *           FOOTER
+  // *****************************/
+  &:nth-child(even){
+    .footnote{
+      left       : 80px;
+      text-align : left;
+    }
+  }
+  .footnote{
+    position   : absolute;
+    right      : 80px;
+    bottom     : 32px;
+    z-index    : 150;
+    width      : 200px;
+    font-size  : 0.8em;
+    color      : #c9ad6a;
+    text-align : right;
+  }
+  //*****************************
+  // *          EXTRAS
+  // *****************************/
+  hr{
+    visibility : hidden;
+    margin     : 0px;
+    border:0;
+    border-bottom           : 2px solid @headerUnderline;
+  }
+  // Modified unorder list, used in spells
+  hr+ul{
+    margin-bottom   : 0.5em;
+    padding-left    : 1em;
+    text-indent     : -1em;
+    list-style-type : none;
+  }
+  pre, code{
+    font-family: monospace;
+  }
+  //Avoid breaking up
+  p,blockquote,table{
+    z-index                     : 15;
+    -webkit-column-break-inside : avoid;
+    page-break-inside           : avoid;
+    break-inside                : avoid;
+  }
+  //Better spacing for spell blocks
+  h4+p+hr+ul{
+    margin-top : -0.5em
+  }
+  //Text indent right after table
+  table+p{
+    text-indent : 1em;
+  }
+  // Nested lists
+  ul ul,ol ol,ul ol,ol ul{
+    margin-bottom : 0px;
+    margin-left   : 1.5em;
+  }
 }
 //*****************************
 // *         SPELL LIST
 // *****************************/
 .spellList{
-	.useSansSerif();
-	column-count        : 2;
-	column-span         : all;
-	-webkit-column-span : all;
-	-moz-column-span    : all;
-	ul+h5{
-		margin-top : 15px;
-	}
-	p, ul{
-		font-size   : 0.352cm;
-		line-height : 1.3em;
-	}
-	ul{
-		margin-bottom               : 0.5em;
-		padding-left                : 1em;
-		text-indent                 : -1em;
-		list-style-type             : none;
-		-webkit-column-break-inside : auto;
-		page-break-inside           : auto;
-		break-inside                : auto;
-	}
+  .useSansSerif();
+  column-count         : 2;
+  -webkit-column-count : 2;
+  -moz-column-count    : 2;
+  break-after: all;
+  page-break-after: all;
+  height: auto;
+  width: auto;
+  ul+h6{
+    margin-top : 15px;
+  }
+  p, ul{
+    font-size   : 0.352cm;
+    line-height : 1.3em;
+  }
+  ul{
+    margin-bottom               : 0.5em;
+    padding-left                : 1em;
+    text-indent                 : -1em;
+    list-style-type             : none;
+    -webkit-column-break-inside : auto;
+    page-break-inside           : auto;
+    break-inside                : auto;
+  }
+  li{
+    text-indent                 : -1em;
+  }
 }
 //*****************************
 // *         WIDE
 // *****************************/
 .wide{
-	column-span         : all;
-	-webkit-column-span : all;
-	-moz-column-span    : all;
+  float: top;
+  float-reference: page;
+  column-span         : all;
+  -webkit-column-span : all;
+  -moz-column-span    : all;
 }
 //*****************************
 // *       CLASS TABLE
 // *****************************/
 .classTable{
-	margin-top          : 25px;
-	margin-bottom       : 40px;
-	border-collapse     : separate;
-	background-color    : white;
-	border              : initial;
-	border-style        : solid;
-	border-image-outset : 25px 17px;
-	border-image-repeat : stretch;
-	border-image-slice  : 150 200 150 200;
-	border-image-source : @frameBorderImage;
-	border-image-width  : 47px;
-	h5{
-		margin-bottom : 10px;
-	}
+  table{
+    margin-top          : 25px;
+    margin-bottom       : 40px;
+    border-collapse     : separate;
+    background-color    : white;
+    border              : initial;
+    border-style        : solid;
+    border-image-outset : 25px 17px;
+    border-image-repeat : stretch;
+    border-image-slice  : 150 200 150 200;
+    border-image-source : @frameBorderImage;
+    border-image-width  : 47px;
+  }
+  h5{
+    margin-bottom : 10px;
+  }
 }
 //************************************
 // *       DESCRIPTIVE TEXT BOX
 // ************************************/
 .descriptive{
-	display             : block-inline;
-	margin-bottom       : 1em;
-	background-color    : #faf7ea;
+  display             : block-inline;
+  margin-bottom       : 1em;
+  background-color    : #faf7ea;
   font-family: ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-	border-style        : solid;
-	border-width        : 7px;
-	border-image        : @descriptiveBoxImage 12 stretch;
-	border-image-outset : 4px;
-	box-shadow          : 0px 0px 6px #faf7ea;
-	p{
-		display        : block;
-		padding-bottom : 0px;
-		line-height    : 1.5em;
-	}
-	p + p {
-		padding-top : .8em;
-	}
-	em {
+  border-style        : solid;
+  border-width        : 7px;
+  border-image        : @descriptiveBoxImage 12 stretch;
+  border-image-outset : 4px;
+  box-shadow          : 0px 0px 6px #faf7ea;
+  p{
+    display        : block;
+    padding-bottom : 0px;
+    line-height    : 1.5em;
+  }
+  p + p {
+    padding-top : .8em;
+  }
+  em {
     font-family: ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-		font-style  : italic;
-	}
-	strong {
+    font-style  : italic;
+  }
+  strong {
     font-family: ScalySans, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-		font-weight    : 800;
-		letter-spacing : -0.02em;
-	}
+    font-weight    : 800;
+    letter-spacing : -0.02em;
+  }
 }
 pre+.descriptive{
-	margin-top : 8px;
+  margin-top : 8px;
 }
 //*****************************
 // *      TABLE OF CONTENTS
 // *****************************/
 .toc{
-	-webkit-column-break-inside : avoid;
-	page-break-inside           : avoid;
-	break-inside                : avoid;
-	a{
-		color           : black;
-		text-decoration : none;
-		&:hover{
-			text-decoration : underline;
-		}
-	}
-	ul{
-		padding-left    : 0;
-		list-style-type : none;
-	}
-	&>ul>li{
-		margin-bottom : 10px;
-	}
+  -webkit-column-break-inside : avoid;
+  page-break-inside           : avoid;
+  break-inside                : avoid;
+  a{
+    color           : black;
+    text-decoration : none;
+    &:hover{
+      text-decoration : underline;
+    }
+  }
+  ul{
+    padding-left    : 0;
+    list-style-type : none;
+  }
+  &>ul>li{
+    margin-bottom : 10px;
+  }
 }
