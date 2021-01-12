@@ -57,3 +57,7 @@ npm validate
 yarn validate
 ```
 
+## License
+This project is licensed under the [MIT license](https://github.com/oldgeese/vivliostyle-theme-dnd5e-phb/blob/master/LICENSE).
+
+Files under `phbStyle` directory are ported from [naturallcrit/homebrewery](https://github.com/naturalcrit/homebrewery). Their license file are placed in [`phbStyle/license`](https://github.com/oldgeese/vivliostyle-theme-dnd5e-phb/blob/master/phbStyle/license).
