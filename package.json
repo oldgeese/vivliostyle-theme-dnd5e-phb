@@ -13,7 +13,7 @@
     "autoprefixer": "^10.2.1",
     "less": "^4.0.0",
     "postcss": "^8.2.4",
-    "postcss-discard-unused": "^4.0.1",
+    "postcss-discard-unused": "^5.0.0",
     "vivliostyle-theme-scripts": "^0.3.1"
   },
   "files": [
