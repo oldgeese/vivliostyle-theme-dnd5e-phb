@@ -859,11 +859,6 @@ indent-string@^4.0.0:
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
   integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
 
-indexes-of@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
-  integrity sha1-8w9xbI4r00bHtn0985FVZqfAVgc=
-
 inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
@@ -1353,20 +1348,18 @@ pify@^4.0.1:
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
 postcss-discard-unused@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-unused/-/postcss-discard-unused-5.0.0.tgz#6aad1061a53088d4b4d4363496d85b9b0de34f7e"
-  integrity sha512-C+bchjnGRoGlSQjACMts/FlpY3LMDEUS5+9rHKxvl/NFUY/5OYWjkA1AEUo9HDWnFB44CFgcm6khLMSIbrjVEQ==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-unused/-/postcss-discard-unused-5.0.1.tgz#63e35a74a154912f93d4e75a1e6ff3cc146f934b"
+  integrity sha512-tD6xR/xyZTwfhKYRw0ylfCY8wbfhrjpKAMnDKRTLMy2fNW5hl0hoV6ap5vo2JdCkuHkP3CHw72beO4Y8pzFdww==
   dependencies:
-    postcss-selector-parser "^6.0.4"
+    postcss-selector-parser "^6.0.5"
 
-postcss-selector-parser@^6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.4.tgz#56075a1380a04604c38b063ea7767a129af5c2b3"
-  integrity sha512-gjMeXBempyInaBqpp8gODmwZ52WaYsVOsfr4L4lDQ7n3ncD6mEyySiDtgzCT+NYC0mmeOLvtsF8iaEf0YT6dBw==
+postcss-selector-parser@^6.0.5:
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.6.tgz#2c5bba8174ac2f6981ab631a42ab0ee54af332ea"
+  integrity sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==
   dependencies:
     cssesc "^3.0.0"
-    indexes-of "^1.0.1"
-    uniq "^1.0.1"
     util-deprecate "^1.0.2"
 
 postcss-value-parser@^4.1.0:
@@ -1878,11 +1871,6 @@ unified@^9.0.0:
     is-plain-obj "^2.0.0"
     trough "^1.0.0"
     vfile "^4.0.0"
-
-uniq@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
-  integrity sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=
 
 unist-builder@^2.0.0, unist-builder@^2.0.3:
   version "2.0.3"
