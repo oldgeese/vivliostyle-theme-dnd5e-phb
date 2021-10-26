@@ -2039,9 +2039,9 @@ vfile@^4.0.0:
     vfile-message "^2.0.0"
 
 vivliostyle-theme-scripts@^0.3.1:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/vivliostyle-theme-scripts/-/vivliostyle-theme-scripts-0.3.2.tgz#6f29c861f728a92efb3099b511bb51c727cab828"
-  integrity sha512-oCjSAdktMsi4nKm4lE6rD5M6OmihobferfWCRbFtEzrXGzElN9rtj/TRtysqmu2OFgsFWwiUr7ZNP/zxEOOK9A==
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/vivliostyle-theme-scripts/-/vivliostyle-theme-scripts-0.3.3.tgz#d2c337470439975e7dacfbb7a54e2d76fc8ebbcc"
+  integrity sha512-0bjkQPHSWaUXJXChQyibdOq+jt9eG1JtsZ1Uo+jdcjGb92dxZu02jUD1xlGZMaew8pnuEvJIU4YWiDr1L3XqqA==
   dependencies:
     "@vivliostyle/vfm" "^1.0.0-alpha.10"
     "@vivliostyle/viewer" "^2.1.1"
