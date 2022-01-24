@@ -1348,9 +1348,9 @@ pify@^4.0.1:
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
 postcss-discard-unused@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-discard-unused/-/postcss-discard-unused-5.0.1.tgz#63e35a74a154912f93d4e75a1e6ff3cc146f934b"
-  integrity sha512-tD6xR/xyZTwfhKYRw0ylfCY8wbfhrjpKAMnDKRTLMy2fNW5hl0hoV6ap5vo2JdCkuHkP3CHw72beO4Y8pzFdww==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-discard-unused/-/postcss-discard-unused-5.0.2.tgz#674bad5fde61517217e7e056015fda694e0cb722"
+  integrity sha512-vP5MOINH2LouL2slqENa8vmKphKjv+VOeeAdlUfySkwi3HoaW1p7++Oh8bqRQzoAmeTrf5G6CHzxa7xMXFNkIA==
   dependencies:
     postcss-selector-parser "^6.0.5"
 
