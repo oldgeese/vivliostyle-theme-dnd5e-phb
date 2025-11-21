@@ -11,7 +11,7 @@ D&D 5e PHB theme for Vivliostyle
 ```bash
 npm install --save vivliostyle-theme-dnd-5e-phb
 # or
-yarn add vivliostyle-theme-dnd-5e-phb
+pnpm add vivliostyle-theme-dnd-5e-phb
 ```
 
 ## Use
@@ -32,29 +32,29 @@ module.exports = {
 see `example/sample.md`
 
 ## Dev
-Edit `phbStyle/*`, then run `npm phb` or `yarn phb`.
+Edit `phbStyle/*`, then run `npm run phb` or `pnpm phb`.
 
 ### Preview
 ```bash
-npm preview
+npm run preview
 # or
-yarn preview
+pnpm preview
 ```
 
 You can specify layout file with `--layout` flag:
 
 ```bash
-npm preview --layout example/default.md
+npm run preview --layout example/default.md
 # or
-yarn preview --layout example/default.md
+pnpm preview --layout example/default.md
 ```
 
 ### Validate
 Validate before publishing your package.
 ```bash
-npm validate
+npm run validate
 # or
-yarn validate
+pnpm validate
 ```
 
 ## License

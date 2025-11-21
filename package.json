@@ -9,12 +9,13 @@
     "phb": "node scripts/phb.js"
   },
   "devDependencies": {
-    "@types/less": "^3.0.2",
-    "autoprefixer": "^10.2.1",
-    "less": "^4.0.0",
-    "postcss": "^8.2.4",
-    "postcss-discard-unused": "^5.0.0",
-    "vivliostyle-theme-scripts": "^0.3.1"
+    "@types/less": "^3.0.8",
+    "autoprefixer": "^10.4.22",
+    "chalk": "^4.1.2",
+    "less": "^4.4.2",
+    "postcss": "^8.5.6",
+    "postcss-discard-unused": "^7.0.4",
+    "vivliostyle-theme-scripts": "^0.3.6"
   },
   "files": [
     "*.css",
