@@ -49,7 +49,7 @@ Use notes to point out some interesting information.
 **Tables and lists** both work within a note.
 </div>
 
-:::classTable
+<div class="classTable">
 
 ##### The Notary
 | Level | Proficiency Bonus | Features | Sixgun Poisoner|
@@ -75,7 +75,7 @@ Use notes to point out some interesting information.
 | 19th | +6 | Ability Score Improvement, Police Cultist | +6 |
 | 20th | +6 | Nuclear Illusionism | +6 |
 
-:::
+</div>
 
 #### Hit Points
 ---
@@ -175,7 +175,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 # Spell
 
-:::spellList
+<div class="spellList">
 
 ### Wizard Spells
 
@@ -287,7 +287,7 @@ You start with the following equipment, in addition to the equipment granted by 
 - Devastation of Seals
 - Dedication of Venom
 
-:::
+</div>
 
 #### Sample Spell
 *1st-level divination*
@@ -303,7 +303,7 @@ Lorem ipsum dolor sit amet, consectet...
 
 # Monster
 
-:::monster
+<div class="monster">
 
 ## Vortexfiend
 
@@ -337,5 +337,5 @@ Lorem ipsum dolor sit amet, consectet...
 ### Actions
 ***Action1.*** *Melee Weapon Attack:* +4 to hit, reach 5ft., one target. *Hit* 5 (1d6 + 2) 
 
-:::
+</div>
 
