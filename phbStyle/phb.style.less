@@ -598,15 +598,10 @@ pre+.descriptive {
 // CAPTION
 // *****************************
 [data-caption] {
-  margin-top: 3em;
   break-inside: avoid-page;
-  position: relative;
 }
 
 [data-caption]::before {
   content: attr(data-caption);
-  text-align: start;
-  top: -1.5em;
-  position: absolute;
   .h5();
 }

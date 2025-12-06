@@ -633,15 +633,10 @@ pre + .descriptive {
   margin-bottom: 10px;
 }
 [data-caption] {
-  margin-top: 3em;
   break-inside: avoid-page;
-  position: relative;
 }
 [data-caption]::before {
   content: attr(data-caption);
-  text-align: start;
-  top: -1.5em;
-  position: absolute;
   margin-bottom: 0.2em;
   font-family: ScalySansSmallCaps, "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-size: 0.423cm;
