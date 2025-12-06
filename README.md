@@ -36,17 +36,9 @@ Edit `phbStyle/*`, then run `npm run phb` or `pnpm phb`.
 
 ### Preview
 ```bash
-npm run preview
+npm run dev
 # or
-pnpm preview
-```
-
-You can specify layout file with `--layout` flag:
-
-```bash
-npm run preview --layout example/default.md
-# or
-pnpm preview --layout example/default.md
+pnpm dev
 ```
 
 ### Validate
