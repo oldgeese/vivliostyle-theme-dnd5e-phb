@@ -24,12 +24,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 
 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）
 
-## Unordered List
-* **a horizontal rule before a ul** will give it the style of unordered list without a bullet.
-
----
-* **a horizontal rule before a ul** will give it the style of unordered list without a bullet.
-
 ### Images
 ![placeholder](https://placehold.jp/100x100.png)
 
@@ -49,9 +43,8 @@ Use notes to point out some interesting information.
 **Tables and lists** both work within a note.
 </div>
 
-<div class="classTable">
+<div class="classTable" data-caption="Notary">
 
-##### The Notary
 | Level | Proficiency Bonus | Features | Sixgun Poisoner|
 |:---:|:---:|:---|:---:|
 | 1st | +2 | Gunpowder Torturer | +1 |
@@ -78,20 +71,31 @@ Use notes to point out some interesting information.
 </div>
 
 #### Hit Points
----
+
+<div class="nobullet">
+
 - ***Hit Dice:*** 1d12 per level
 - **Hit Points at 1st Level:** 12 + your Constitution modifier
 - **Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution modifier per level after 1st
 
+</div>
+
 #### Proficiencies
----
+
+<div class="nobullet">
+
 - **Armor:** Light armor
 - **Weapons:** Rubber Chicken, Simple weapons
 - **Tools:** None
 
----
+</div>
+
+<div class="nobullet">
+
 - **Saving Throws:** Strength, Charisma
 - **Skills:** Choose two from Performance, Animal Handling, Acrobatics , Perception, History, Persuasion
+
+</div>
 
 #### Equipment
 You start with the following equipment, in addition to the equipment granted by your background:
@@ -99,9 +103,8 @@ You start with the following equipment, in addition to the equipment granted by 
 - *(a)* five javelins or *(b)* any simple melee weapon
 - a cherished lost sock
 
-<div class="classTable wide">
+<div class="classTable wide" data-caption="The Fancyman">
 
-##### The Fancyman
 | Level | Proficiency Bonus | Features | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 |:---:|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1st | +2 | ─ | 3 | 1 | 2 | — | — | — | — | — | — | — | — |
@@ -159,9 +162,8 @@ You start with the following equipment, in addition to the equipment granted by 
 
 </div>
 
-<div class="wide">
+<div class="wide" data-caption="Wide Table">
 
-##### Wide Table
 | Level | Proficiency Bonus | Features | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 |:---:|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1st | +2 | ─ | 3 | 1 | 2 | — | — | — | — | — | — | — | — |
@@ -171,7 +173,6 @@ You start with the following equipment, in addition to the equipment granted by 
 | 5th | +3 | Torque Interfacer | 3 | 3 | 4 | 3 | — | — | — | — | — | — | — |
 
 </div>
-
 
 # Spell
 
@@ -292,11 +293,14 @@ You start with the following equipment, in addition to the equipment granted by 
 #### Sample Spell
 *1st-level divination*
 
----
+<div class="nobullet">
+
 - **Casting Time:** 1 action
 - **Range:** 60 feet
 - **Components:** V, M (sample material)
 - **Duration:** Until dispelled
+
+</div>
 
 Lorem ipsum dolor sit amet, consectet...
 

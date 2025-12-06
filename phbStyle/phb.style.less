@@ -103,6 +103,16 @@ html {
   -moz-column-gap: 1cm;
 }
 
+.h5() {
+  margin-bottom: 0.2em;
+  font-family:
+    ScalySansSmallCaps, "Helvetica Neue", "Helvetica",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic",
+    "Meiryo", sans-serif;
+  font-size: 0.423cm;
+  font-weight: 900;
+}
+
 body {
   .useColumns();
   z-index: 15;
@@ -113,8 +123,6 @@ body {
     serif;
   font-size: 0.317cm;
   text-rendering: optimizeLegibility;
-  page-break-before: always;
-  page-break-after: always;
 
   //*****************************
   // *            BASE
@@ -199,20 +207,18 @@ body {
   h4,
   h5,
   h6 {
-    break-inside: avoid;
-    break-after: avoid;
-    page-break-inside: avoid;
-    page-break-after: avoid;
+    break-inside: avoid-page;
+    break-after: avoid-page;
   }
 
   h1 {
-    column-span: all;
+    float: block-start;
+    float-reference: page;
     font-size: 0.987cm;
-    -webkit-column-span: all;
-    -moz-column-span: all;
     page-break-before: always;
 
     &+p::first-letter {
+      float: block-start;
       font-family:
         Solberry, "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho",
         serif;
@@ -237,13 +243,7 @@ body {
   }
 
   h5 {
-    margin-bottom: 0.2em;
-    font-family:
-      ScalySansSmallCaps, "Helvetica Neue", "Helvetica",
-      "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", "Yu Gothic",
-      "Meiryo", sans-serif;
-    font-size: 0.423cm;
-    font-weight: 900;
+    .h5();
   }
 
   //*****************************
@@ -313,11 +313,7 @@ body {
 
   .monster {
     padding-top: 15px;
-    // background-color : @monsterStatBackground;
     background-color: transparent;
-    // border-style     : solid;
-    // border-width     : 10px;
-    // border-image     : @monsterBorderImage 10;
     border: 0;
     box-shadow: 0;
 
@@ -412,14 +408,13 @@ body {
   // *          EXTRAS
   // *****************************/
   hr {
-    visibility: hidden;
     margin: 0px;
     border: 0;
     border-bottom: 2px solid @headerUnderline;
   }
 
-  // Modified unorder list, used in spells
-  hr+ul {
+  // unorder list without bullets
+  .nobullet ul{
     margin-bottom: 0.5em;
     padding-left: 1em;
     text-indent: -1em;
@@ -503,11 +498,8 @@ body {
 // *         WIDE
 // *****************************/
 .wide {
-  float: top;
+  float:block-start;
   float-reference: page;
-  column-span: all;
-  -webkit-column-span: all;
-  -moz-column-span: all;
 }
 
 //*****************************
@@ -526,10 +518,6 @@ body {
     border-image-slice: 150 200 150 200;
     border-image-source: @frameBorderImage;
     border-image-width: 47px;
-  }
-
-  h5 {
-    margin-bottom: 10px;
   }
 }
 
@@ -604,4 +592,21 @@ pre+.descriptive {
   &>ul>li {
     margin-bottom: 10px;
   }
+}
+
+// *****************************
+// CAPTION
+// *****************************
+[data-caption] {
+  margin-top: 3em;
+  break-inside: avoid-page;
+  position: relative;
+}
+
+[data-caption]::before {
+  content: attr(data-caption);
+  text-align: start;
+  top: -1.5em;
+  position: absolute;
+  .h5();
 }
